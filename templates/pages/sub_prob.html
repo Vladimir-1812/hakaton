@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block pagename %}
+<div class="row">
+    <div class="col text-center">
+        <h1>{{pagename}}</h1><hr>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <form action="{% url "mmap_view" %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="set" value="user">
+            <button type="submit" class="btn btn-primary" style="margin-bottom: 15px">Показать все на карте</button>
+        </form>
+    </div>
+</div>
+<div class="grid">
+{%  for i in problems_list %}
+    <div calss="item">
+        <a href="{% url 'map_view' %}?id={{ i.id }}">{{ i.lat }}, {{ i.lng }}</a>
+        <br>
+    </div>
+{%  endfor %}
+</div>
+
+
+{% endblock %}

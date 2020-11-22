@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block pagename %}
+<div class="row">
+    <div class="col text-center">
+        <h1>{{pagename}}</h1><hr>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <p>Добро пожаловать, уважаемый житель города Санкт-Петербург!
+        <p>На этом сайте вы сможете ознакомится с проблемами вашего города, а также поделиться проблемами вашего города с другими жителями.<br>
+        {% if not user.is_authenticated %}
+        <p>Для того чтобы опубликовать проблему вы должны войти в свой Аккаунт.<br>
+        {% endif %}
+        <form action="{% url "mmap_view" %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="set" value="all">
+            <button type="submit" class="btn btn-primary" style="margin-top: 15px">Показать все на карте</button>
+        </form>
+        <hr>
+    </div>
+</div>
+
+<div class="grid">
+{%  for i in problems_list %}
+    <div class="item">
+        <lable align ="left">Отправлено: {{ i.date }}</lable><br>
+        <a class="btn btn-outline-primary" style="max-width: 200px" href="{% url 'map_view' %}?id={{ i.id }}">Открыть на карте</a><br>
+        <lable>Тип сообщения:  {{ i.type }}</lable><br>
+        <div class="demo">
+    	<input class="hide" id="hd-{{ i.id }}" type="checkbox">
+   		<label for="hd-{{ i.id }}">Показать описание</label>
+    		<div>
+                 {{ i.description }}
+    		</div>
+        </div>
+    <div align="middle"><lable>Оценки: </lable><b><font color=#32CD32>+{{ i.votes_pos }}</font><font color=#FF0000>/-{{ i.votes_neg }}</font></b></div>
+    </div>
+{%  endfor %}
+</div>
+
+
+{% endblock %}

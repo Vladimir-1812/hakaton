@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+{% endblock %}
+
+{% block pagename %}
+<div class="row">
+    <div class="col text-center">
+        <h1>{{pagename}}</h1><hr>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="map" style="width: 100%; height: 700px;"></div>
+{% endblock %}
+
+{% block extrajs %}
+<script type="text/javascript">
+    ymaps.ready(init);
+    function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [{{ prob.lat }}, {{ prob.lng }}],
+            zoom: 17,
+            // Элементы управления
+            // https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/controls/standard-docpage/
+            controls: [
+                'zoomControl', // Ползунок масштаба
+                'rulerControl', // Линейка
+                //'routeButtonControl', // Панель маршрутизации
+                'trafficControl', // Пробки
+                'typeSelector', // Переключатель слоев карты
+                'fullscreenControl', // Полноэкранный режим
+                //new ymaps.control.SearchControl({options: {size: 'large', provider: 'yandex#search'}})
+            ]
+        });
+        {% load static %}
+        types_ = {
+	        0: "{% static 'images/0.png' %}",
+	        1: "{% static 'images/1.png' %}",
+	        2: "{% static 'images/2.png' %}",
+	        3: "{% static 'images/3.png' %}",
+        };
+        var myPlacemark = new ymaps.Placemark([{{ prob.lat }}, {{ prob.lng }}], {
+            hintContent: 0,
+            balloonContent: '{{ prob.description}}',},
+            {iconLayout: 'default#image',
+            iconImageHref: types_[{{ prob.type }}],
+            iconImageSize: [128, 128],
+            iconImageOffset: [-64, -64-32],
+            });
+        myMap.geoObjects.add(myPlacemark);
+    }
+</script>
+{% endblock %}

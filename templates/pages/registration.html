@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block pagename %}
+<div class="row">
+    <div class="col text-center">
+        <h1>{{pagename}}</h1><hr>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <p>Для регистрации, заполните поля ниже.</p>
+    <form class="w-100 px-4 py-3" action="." method="post">
+        {% for field in user_form.visible_fields %}
+        <div class="form-group form-inline">{{ field }}</div>
+        {% endfor %}
+        {% csrf_token %}
+        <p><button type="submit" class="btn btn-primary">Создать аккаунт</button></p>
+    </form>
+</div>
+{% endblock %}
