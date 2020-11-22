@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from hakaton_app import views
-
+from django.views.static import serve
+from hakaton.settings import STATICFILES_DIRS
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("map/", views.smap, name="map_view"),
@@ -28,4 +29,5 @@ urlpatterns = [
     path("registration/", views.registration_page, name="register"),
     path("uproblems/", views.user_problems, name="sub_prob"),
     path("create_new_problem/", views.create_problem, name="add_prob"),
+    path("static/", serve, {'document_root': STATICFILES_DIRS}),
 ]

@@ -39,7 +39,6 @@ def mmap(request):
             context["prob_list"] = Problem.objects.filter(author_id=request.user.id)
         else:
             context["prob_list"] = []
-    print(len(context["prob_list"]))
     return render(request, "pages/mmap.html", context)
 
 def login_check_page(request):

@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '$!ida-dcr7#$xy#56fs7e=u7c&kkjkpb&t+7t@35@@m83h=++q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1", "192.168.56.1"]
 
