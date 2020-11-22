@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed482bb6-7541-4f99-955b-775ffef0c342" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hakaton/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hakaton/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hakaton_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.bat" beforeDir="false" afterPath="$PROJECT_DIR$/run.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,25 +68,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="159" />
+          <entry key="html" value="213" />
           <entry key="py" value="193" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="159" />
+          <entry key="HTML" value="213" />
           <entry key="Python" value="193" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="7" />
+          <entry key="html" value="9" />
           <entry key="py" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="7" />
+          <entry key="HTML" value="9" />
           <entry key="Python" value="3" />
         </counts>
       </usages-collector>
@@ -98,11 +94,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hakaton_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+            <state relative-caret-position="378">
+              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
                 <marker date="1606067538542" expanded="true" signature="540:747" ph="..." />
@@ -115,17 +111,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hakaton_app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="135">
+              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/pages/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="32" column="134" selection-start-line="32" selection-start-column="134" selection-end-line="32" selection-end-column="134" />
+            <state relative-caret-position="509">
+              <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
               <folding>
                 <element signature="e#1005#1056#0#HTML" expanded="true" />
               </folding>
@@ -137,7 +133,7 @@
         <entry file="file://$PROJECT_DIR$/hakaton/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="658">
-              <caret line="31" column="64" lean-forward="true" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
+              <caret line="31" column="64" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
               <folding>
                 <element signature="e#631#663#0" expanded="true" />
               </folding>
@@ -148,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/pages/sub_prob.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+            <state relative-caret-position="486">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
               <folding>
                 <element signature="e#704#755#0#HTML" expanded="true" />
               </folding>
@@ -158,13 +154,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hakaton/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="685">
-              <caret line="123" column="53" lean-forward="true" selection-start-line="123" selection-start-column="53" selection-end-line="123" selection-end-column="53" />
+              <caret line="123" column="53" selection-start-line="123" selection-start-column="53" selection-end-line="123" selection-end-column="53" />
               <folding>
                 <element signature="e#308#332#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="536">
+              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -201,7 +215,6 @@
         <option value="$PROJECT_DIR$/accounts/views.py" />
         <option value="$PROJECT_DIR$/templates/pages/sub_porb.html" />
         <option value="$PROJECT_DIR$/templates/pages/map.html" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/pages/registration.html" />
         <option value="$PROJECT_DIR$/templates/pages/login_page.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
@@ -218,6 +231,7 @@
         <option value="$PROJECT_DIR$/hakaton/settings.py" />
         <option value="$PROJECT_DIR$/hakaton/urls.py" />
         <option value="$PROJECT_DIR$/hakaton_app/views.py" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
       </list>
     </option>
   </component>
@@ -227,7 +241,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -282,7 +296,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../prom_kr" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -476,13 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
@@ -534,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hakaton_app/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="631">
@@ -576,61 +576,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pages/sub_prob.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding>
-            <element signature="e#704#755#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pages/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="32" column="134" selection-start-line="32" selection-start-column="134" selection-end-line="32" selection-end-column="134" />
-          <folding>
-            <element signature="e#1005#1056#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hakaton_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hakaton/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="123" column="53" lean-forward="true" selection-start-line="123" selection-start-column="53" selection-end-line="123" selection-end-column="53" />
-          <folding>
-            <element signature="e#308#332#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hakaton/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="658">
-          <caret line="31" column="64" lean-forward="true" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
+          <caret line="31" column="64" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
           <folding>
             <element signature="e#631#663#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hakaton/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="123" column="53" selection-start-line="123" selection-start-column="53" selection-end-line="123" selection-end-column="53" />
+          <folding>
+            <element signature="e#308#332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/sub_prob.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding>
+            <element signature="e#704#755#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hakaton_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        <state relative-caret-position="378">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
             <marker date="1606067538542" expanded="true" signature="540:747" ph="..." />
             <marker date="1606067538542" expanded="true" signature="3450:3451" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hakaton_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding>
+            <element signature="e#1005#1056#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
