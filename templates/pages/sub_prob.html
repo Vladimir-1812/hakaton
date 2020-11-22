@@ -20,12 +20,35 @@
 </div>
 <div class="grid">
 {%  for i in problems_list %}
-    <div calss="item">
-        <a href="{% url 'map_view' %}?id={{ i.id }}">{{ i.lat }}, {{ i.lng }}</a>
-        <br>
+    <div class="item">
+        <lable align ="left">Отправлено: {{ i.date }}</lable><br>
+        <img id="img-{{ i.id }}" src="" style="width: 72px; height: 72px; alignment: right">
+        <a class="btn btn-outline-primary" style="max-width: 200px" href="{% url 'map_view' %}?id={{ i.id }}">Открыть на карте</a><br>
+        <div class="demo">
+    	<input class="hide" id="hd-{{ i.id }}" type="checkbox">
+   		<label for="hd-{{ i.id }}">Показать описание</label>
+    		<div>
+                 {{ i.description }}
+    		</div>
+        </div>
+    <div align="middle"><lable>Оценки: </lable><b><font color=#32CD32>+{{ i.votes_pos }}</font><font color=#FF0000>/-{{ i.votes_neg }}</font></b></div>
     </div>
 {%  endfor %}
 </div>
+{% endblock %}
 
-
+{% block extrajs %}
+<script type="text/javascript">
+    {% load static %}
+    types_ = {
+	        0: "{% static 'images/0.png' %}",
+	        1: "{% static 'images/1.png' %}",
+	        2: "{% static 'images/2.png' %}",
+	        3: "{% static 'images/3.png' %}",
+            4: "{% static 'images/4.png' %}",
+    };
+    {%  for i in problems_list %}
+        document.getElementById("img-{{ i.id }}").src = types_[{{ i.type }}];
+    {%  endfor %}
+</script>
 {% endblock %}
